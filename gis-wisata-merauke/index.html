@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GIS Wisata Merauke</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+</head>
+<body>
+  <header>
+    <h1>GIS Wisata Merauke</h1>
+    <p>Peta Interaktif Lokasi Wisata di Merauke, Papua Selatan</p>
+  </header>
+
+  <!-- MAP & SIDEBAR -->
+  <div class="container">
+    <div id="map"></div>
+    <div class="sidebar">
+      <input type="text" id="searchInput" placeholder="Cari tempat wisata..."/>
+      <label for="categorySelect">Filter Kategori:</label>
+      <select id="categorySelect">
+        <option value="all">Semua Kategori</option>
+        <option value="Pantai">Pantai</option>
+        <option value="Taman">Taman</option>
+        <option value="Monumen">Monumen</option>
+      </select>
+      <div id="placeList"></div>
+    </div>
+  </div>
+
+  <!-- WISATA POPULER -->
+  <section class="wisata-populer">
+    <div class="judul-populer">
+      <h2>Wisata Populer Merauke</h2>
+      <p>Destinasi wisata terbaik yang wajib dikunjungi.</p>
+    </div>
+    <div class="card-container">
+      <div class="card">
+        <img src="img/lampu 1.jpg" alt="Pantai Lampu Satu">
+        <div class="card-body">
+          <h3>Pantai Lampu Satu</h3>
+          <p>Pantai eksotis dengan mercusuar ikonik dan pasir putih.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/taman_wasur.jpg" alt="Taman Nasional Wasur">
+        <div class="card-body">
+          <h3>Taman Nasional Wasur</h3>
+          <p>Surga satwa langka dan ekosistem savana yang memukau.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/kapsul_waktu.jpg" alt="Monumen Kapsul Waktu">
+        <div class="card-body">
+          <h3>Monumen Kapsul Waktu</h3>
+          <p>Berisi impian anak-anak Indonesia dan akan dibuka kembali tahun 2085.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tentang Section -->
+<section id="tentang" class="tentang-section">
+  <div class="tentang-container">
+    <h2 class="tentang-title">Tentang GIS Wisata Merauke</h2>
+    <p class="tentang-text">
+      <strong>GIS Wisata Merauke</strong> adalah sistem informasi geografis interaktif
+      yang menyajikan informasi lokasi wisata terbaik di Kabupaten Merauke,
+      Papua Selatan. Aplikasi ini dirancang untuk membantu wisatawan dan
+      masyarakat lokal menjelajahi tempat-tempat menarik dengan mudah, cepat,
+      dan akurat melalui peta digital.
+    </p>
+  </div>
+</section>
+
+<!-- Kontak Section -->
+<section id="kontak" class="kontak-section">
+  <div class="kontak-container">
+    <h2 class="kontak-title">Kontak Kami</h2>
+    <p class="kontak-subtitle">
+      Hubungi kami untuk informasi lebih lanjut atau kolaborasi.
+    </p>
+
+    <div class="kontak-card">
+      <p><strong>Dinas Pariwisata Merauke</strong></p>
+      <p>Alamat: Jalan Raya Mandala, Merauke</p>
+      <p>Email: dinaspariwisata@merauke.go.id</p>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-container">
+    <p>Data wisata bersumber dari Dinas Pariwisata Merauke & OpenStreetMap</p>
+    <p class="footer-copy">&copy; 2025 GIS Wisata Merauke. Hak Cipta Dilindungi.</p>
+  </div>
+</footer>
+
+
+  <!-- SCRIPT -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-control-geocoder/2.4.0/Control.Geocoder.min.js"></script>
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
