@@ -1,0 +1,214 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+header {
+  background: #007b31;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+.container {
+  display: flex;
+  height: calc(100vh - 120px);
+}
+#map {
+  flex: 3;
+  height: 100%;
+}
+.sidebar {
+  flex: 1;
+  padding: 1rem;
+  background: #f9f9f9;
+  overflow-y: auto;
+}
+.sidebar input,
+.sidebar select {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+.list-item {
+  background: white;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+}
+.list-item:hover {
+  background: #e0f7fa;
+}
+img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+.wisata-populer {
+  padding: 3rem 1rem;
+  background: #eaf2fd;
+  text-align: center;
+}
+
+.wisata-populer h2 {
+  color: #1d4ed8;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.wisata-populer p {
+  color: #374151;
+  margin-bottom: 2rem;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  justify-items: center;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  width: 100%;
+  max-width: 320px;
+  transition: transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 1rem;
+  flex: 1;
+}
+
+.card-body h3 {
+  color: #1e3a8a;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-body p {
+  color: #4b5563;
+  font-size: 0.95rem;
+}
+/* Tentang Section */
+.tentang-section {
+  background-color: #ffffff;
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.tentang-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #f0f9ff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+
+.tentang-title {
+  font-size: 2rem;
+  color: #1d4ed8;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.tentang-text {
+  color: #374151;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+/* Tentang Section */
+.tentang-section {
+  background-color: #ffffff;
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.tentang-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #f0f9ff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+
+.tentang-title {
+  font-size: 2rem;
+  color: #1d4ed8;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.tentang-text {
+  color: #374151;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+/* Kontak Section */
+.kontak-section {
+  background-color: #ebf8ff;
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.kontak-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.kontak-title {
+  font-size: 2rem;
+  color: #1e3a8a;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.kontak-subtitle {
+  color: #4b5563;
+  margin-bottom: 1.5rem;
+}
+
+.kontak-card {
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  display: inline-block;
+  text-align: left;
+}
+
+/* Footer */
+.footer {
+  background-color:  #007b31;
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.footer-copy {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
